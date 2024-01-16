@@ -1,7 +1,6 @@
 provider "aws" {
   region     = "us-east-1"
-  secret_key = var.secret_key
-  access_key = var.access_key
+
 }
 
 resource "aws_instance" "web-server" {
@@ -12,3 +11,4 @@ resource "aws_instance" "web-server" {
     Name = "WEB"
   }
 }
+
